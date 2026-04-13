@@ -11,24 +11,6 @@ export function Testimonial() {
           </h2>
         </div>
 
-        {/* Pilot Schools */}
-        <div className="mb-12">
-          <p className="text-center text-sm font-medium text-muted-foreground mb-6">Active Pilot Schools in Goa</p>
-          <div className="flex flex-wrap items-center justify-center gap-3">
-            {['Goa Velha', 'Fr Agnel St Lawrence', 'Fr Agnel Central', 'St Andrews', 'Don Bosco Panjim', 'Loyola High School', 'St Xavier\'s Mapusa', 'Holy Cross Candolim'].map((school) => (
-              <span
-                key={school}
-                className="px-4 py-2 text-sm font-medium rounded-full bg-primary/10 text-primary border border-primary/20"
-              >
-                {school}
-              </span>
-            ))}
-            <span className="px-4 py-2 text-sm font-medium rounded-full bg-muted text-muted-foreground">
-              + 4 more
-            </span>
-          </div>
-        </div>
-
         {/* Testimonial */}
         <div className="max-w-4xl mx-auto">
           <div className="relative bg-background rounded-2xl p-8 md:p-12 border border-border">
