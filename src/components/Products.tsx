@@ -41,12 +41,12 @@ export function Products() {
     <section id="products" className="py-20 md:py-32 bg-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <p className="text-sm font-medium text-primary uppercase tracking-wider mb-4">Products</p>
+          <p className="text-sm font-medium text-primary uppercase tracking-wider mb-4">Impact & Outcomes</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground text-balance">
             Built for everyone in the ecosystem
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Whether you&apos;re a school administrator, young athlete, or sports academy, Athlosys has the tools you need.
+            Whether you&apos;re a school administrator, young athlete, parent, or sports academy, Peak Athlete has the tools you need.
           </p>
         </div>
 

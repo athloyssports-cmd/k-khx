@@ -6,6 +6,7 @@ import { Products } from './components/Products'
 import { HowItWorks } from './components/HowItWorks'
 import { Technology } from './components/Technology'
 import { WhyAthlosys } from './components/WhyAthlosys'
+import { Testimonial } from './components/Testimonial'
 import { Vision } from './components/Vision'
 import { CTA } from './components/CTA'
 import { Footer } from './components/Footer'
@@ -22,6 +23,7 @@ function App() {
         <HowItWorks />
         <Technology />
         <WhyAthlosys />
+        <Testimonial />
         <Vision />
         <CTA />
       </main>
