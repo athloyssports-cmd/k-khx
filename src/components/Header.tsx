@@ -19,9 +19,11 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">A</span>
-            </div>
+            <img 
+              src="/logo.jpg" 
+              alt="Athlosys Logo" 
+              className="w-10 h-10 object-contain"
+            />
             <span className="font-semibold text-xl text-foreground">Athlosys</span>
           </a>
 

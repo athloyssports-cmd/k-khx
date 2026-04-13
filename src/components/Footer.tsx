@@ -25,7 +25,7 @@ const socialLinks = [
   { icon: Twitter, href: '#', label: 'Twitter' },
   { icon: Linkedin, href: '#', label: 'LinkedIn' },
   { icon: Instagram, href: '#', label: 'Instagram' },
-  { icon: Mail, href: 'mailto:hello@athlosys.com', label: 'Email' },
+  { icon: Mail, href: 'mailto:durgesh@athlosys.com', label: 'Email' },
 ]
 
 export function Footer() {
@@ -36,14 +36,22 @@ export function Footer() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-2">
             <a href="#" className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">A</span>
-              </div>
+              <img 
+                src="/logo.jpg" 
+                alt="Athlosys Logo" 
+                className="w-10 h-10 object-contain"
+              />
               <span className="font-semibold text-xl text-foreground">Athlosys</span>
             </a>
             <p className="mt-4 text-sm text-muted-foreground max-w-xs leading-relaxed">
-              The operating system for school sports. Transforming physical education into a data-driven talent discovery ecosystem.
+              School Sports Intelligence Platform. Measure. Understand. Develop.
             </p>
+            <div className="mt-4 text-sm text-muted-foreground space-y-1">
+              <p>Durgesh Rai, Founder & CEO</p>
+              <p>durgesh@athlosys.com</p>
+              <p>+91-9142783928</p>
+              <p className="text-xs">www.athlosys.com</p>
+            </div>
             
             {/* Social Links */}
             <div className="mt-6 flex items-center gap-4">

@@ -17,18 +17,18 @@ export function Hero() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
             </span>
-            The Operating System for School Sports
+            School Sports Intelligence Platform
           </div>
 
           {/* Headline */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground text-balance">
-            Turn Every School Into a{' '}
-            <span className="text-primary">Talent Discovery</span> Engine
+            India&apos;s School-to-Sport{' '}
+            <span className="text-primary">Talent Pathway</span>
           </h1>
 
           {/* Subtext */}
           <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Athlosys transforms student data into AI-powered insights, helping schools identify and develop athletic potential at scale.
+            Measure. Understand. Develop. Athlosys transforms school sports into data-driven physical development with AI-powered talent identification.
           </p>
 
           {/* CTAs */}
@@ -52,10 +52,10 @@ export function Hero() {
           {/* Stats */}
           <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
             {[
-              { value: '500+', label: 'Schools Onboarded' },
-              { value: '100K+', label: 'Students Assessed' },
-              { value: '15+', label: 'States Covered' },
-              { value: '98%', label: 'Accuracy Rate' },
+              { value: '1,000+', label: 'Students Monitored' },
+              { value: '4', label: 'Pilot Schools' },
+              { value: '12+', label: 'Assessment Metrics' },
+              { value: 'Goa', label: 'Launch State' },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="text-2xl md:text-3xl font-bold text-foreground">{stat.value}</div>

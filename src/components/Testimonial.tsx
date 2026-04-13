@@ -12,18 +12,37 @@ export function Testimonial() {
         </div>
 
         {/* Stats */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <div className="text-center p-8 rounded-2xl bg-background border border-border">
-            <div className="text-4xl md:text-5xl font-bold text-primary mb-2">4,000+</div>
-            <p className="text-muted-foreground">Students currently benefiting from our platform</p>
+        <div className="grid md:grid-cols-4 gap-6 mb-16">
+          <div className="text-center p-6 rounded-2xl bg-background border border-border">
+            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">1,000+</div>
+            <p className="text-muted-foreground text-sm">Students Monitored</p>
           </div>
-          <div className="text-center p-8 rounded-2xl bg-background border border-border">
-            <div className="text-4xl md:text-5xl font-bold text-primary mb-2">6</div>
-            <p className="text-muted-foreground">Partner schools across Goa</p>
+          <div className="text-center p-6 rounded-2xl bg-background border border-border">
+            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">4</div>
+            <p className="text-muted-foreground text-sm">Active Pilot Schools</p>
           </div>
-          <div className="text-center p-8 rounded-2xl bg-background border border-border">
-            <div className="text-4xl md:text-5xl font-bold text-primary mb-2">12+</div>
-            <p className="text-muted-foreground">Schools with confirmed interest</p>
+          <div className="text-center p-6 rounded-2xl bg-background border border-border">
+            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">2</div>
+            <p className="text-muted-foreground text-sm">Govt Bodies in Discussion</p>
+          </div>
+          <div className="text-center p-6 rounded-2xl bg-background border border-border">
+            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">100</div>
+            <p className="text-muted-foreground text-sm">Schools Target (July 2026)</p>
+          </div>
+        </div>
+
+        {/* Pilot Schools */}
+        <div className="mb-12">
+          <p className="text-center text-sm font-medium text-muted-foreground mb-6">Active Pilot Deployments in Goa</p>
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            {['Goa Velha', 'Fr Agnel St Lawrence', 'Fr Agnel Central', 'St Andrews'].map((school) => (
+              <span
+                key={school}
+                className="px-4 py-2 text-sm font-medium rounded-full bg-primary/10 text-primary border border-primary/20"
+              >
+                {school}
+              </span>
+            ))}
           </div>
         </div>
 
@@ -48,16 +67,19 @@ export function Testimonial() {
           </div>
         </div>
 
-        {/* Policy Badges */}
-        <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
-          {['NEP 2020', 'National Sports Policy', 'ASSOCHAM Goa', 'State Education Bodies'].map((badge) => (
-            <span
-              key={badge}
-              className="px-4 py-2 text-sm font-medium rounded-full bg-muted text-muted-foreground"
-            >
-              {badge}
-            </span>
-          ))}
+        {/* Govt Bodies */}
+        <div className="mt-12">
+          <p className="text-center text-sm font-medium text-muted-foreground mb-6">In Active Discussions With</p>
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            {['Sports Authority of Goa', 'Department of Education (DOE)', 'NEP 2020 Aligned', 'National Sports Policy'].map((badge) => (
+              <span
+                key={badge}
+                className="px-4 py-2 text-sm font-medium rounded-full bg-muted text-muted-foreground"
+              >
+                {badge}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </section>

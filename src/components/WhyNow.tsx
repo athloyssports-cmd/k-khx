@@ -1,9 +1,9 @@
-import { BookOpen, Target, MapPin, Award } from 'lucide-react'
+import { BookOpen, Target, MapPin, Award, Calendar, TrendingUp, Building } from 'lucide-react'
 
 const policies = [
   {
     icon: BookOpen,
-    title: 'NEP 2020',
+    title: 'NEP 2020 Alignment',
     items: [
       'Emphasis on holistic development',
       'Focus on experiential learning',
@@ -13,21 +13,45 @@ const policies = [
   },
   {
     icon: Target,
-    title: 'National Sports Policy 2025',
+    title: 'The Contrarian Insight',
     items: [
-      'Grassroots talent identification',
-      'Sports in school curriculum',
-      'Scientific assessment pathways',
-      'Development tracking systems',
+      'The problem is NOT infrastructure',
+      'It\'s a lack of systems + data',
+      '23% of schools lack playgrounds',
+      'Yet distribution exists: PE teachers',
     ],
   },
 ]
 
-const goaFeatures = [
-  { icon: Award, label: 'High per capita income' },
-  { icon: BookOpen, label: 'High literacy rate' },
-  { icon: Target, label: 'Strong sports ecosystem' },
-  { icon: MapPin, label: 'Government support' },
+const roadmap = [
+  {
+    phase: 'Phase 1',
+    period: '2025 - Early 2026',
+    title: 'Foundation',
+    items: ['Pilot with 4 schools', 'Validate protocols', 'Build MVP platform'],
+    status: 'current',
+  },
+  {
+    phase: 'March 2026',
+    period: '',
+    title: 'Product Launch',
+    items: ['Full platform rollout', 'Student dashboards', 'AI scoring (PPS & APR)'],
+    status: 'upcoming',
+  },
+  {
+    phase: 'Phase 2',
+    period: 'Mid-Late 2026',
+    title: 'Scale',
+    items: ['100 schools by July', 'Academy integrations', 'Structured database'],
+    status: 'upcoming',
+  },
+  {
+    phase: 'Phase 3',
+    period: '2027',
+    title: 'Expansion',
+    items: ['Gujarat & Odisha', 'National talent network', 'Grassroots ecosystem'],
+    status: 'upcoming',
+  },
 ]
 
 export function WhyNow() {
@@ -37,14 +61,15 @@ export function WhyNow() {
         <div className="text-center mb-16">
           <p className="text-sm font-medium text-primary uppercase tracking-wider mb-4">Why Now</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground text-balance">
-            Perfect Convergence of Policy, Market & Technology
+            From Regional MVP to National Infrastructure
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Government initiatives are creating unprecedented demand for structured physical assessment in schools.
+            Perfect convergence of policy support, market readiness, and technology capability.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        {/* Policy Cards */}
+        <div className="grid lg:grid-cols-3 gap-8 mb-16">
           {policies.map((policy, index) => (
             <div
               key={index}
@@ -65,27 +90,67 @@ export function WhyNow() {
             </div>
           ))}
 
-          {/* Goa Launchpad */}
+          {/* Blue Ocean Card */}
           <div className="bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/20 rounded-2xl p-8 hover:shadow-lg transition-all">
             <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center mb-6">
-              <MapPin className="w-6 h-6 text-primary-foreground" />
+              <TrendingUp className="w-6 h-6 text-primary-foreground" />
             </div>
-            <h3 className="text-xl font-semibold text-foreground mb-4">Goa: Perfect Launchpad</h3>
-            <div className="grid grid-cols-2 gap-4">
-              {goaFeatures.map((feature, i) => (
-                <div key={i} className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <feature.icon className="w-4 h-4 text-primary shrink-0" />
-                  <span>{feature.label}</span>
-                </div>
-              ))}
-            </div>
-            <div className="mt-6 flex flex-wrap gap-2">
-              {['NEP 2020', 'FIT India', 'Khelo India', 'ASSOCHAM Goa'].map((badge) => (
-                <span key={badge} className="px-3 py-1 text-xs font-medium rounded-full bg-primary/20 text-primary">
-                  {badge}
-                </span>
-              ))}
-            </div>
+            <h3 className="text-xl font-semibold text-foreground mb-4">Untapped Blue Ocean</h3>
+            <ul className="space-y-3">
+              <li className="flex items-start gap-3 text-sm text-muted-foreground">
+                <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
+                EdTech + HealthTech + SportsTech convergence
+              </li>
+              <li className="flex items-start gap-3 text-sm text-muted-foreground">
+                <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
+                1.5M schools, 250M+ students in India
+              </li>
+              <li className="flex items-start gap-3 text-sm text-muted-foreground">
+                <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
+                Physical development sector un-digitized
+              </li>
+              <li className="flex items-start gap-3 text-sm text-muted-foreground">
+                <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
+                Zero-capex scaling via existing PE teachers
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Roadmap */}
+        <div className="bg-card border border-border rounded-2xl p-8 md:p-12">
+          <div className="flex items-center gap-3 mb-8">
+            <Calendar className="w-6 h-6 text-primary" />
+            <h3 className="text-xl font-semibold text-foreground">Growth Roadmap</h3>
+          </div>
+          <div className="grid md:grid-cols-4 gap-6">
+            {roadmap.map((phase, index) => (
+              <div
+                key={index}
+                className={`relative p-6 rounded-xl border ${
+                  phase.status === 'current' 
+                    ? 'bg-primary/10 border-primary/30' 
+                    : 'bg-secondary/50 border-border'
+                }`}
+              >
+                {phase.status === 'current' && (
+                  <span className="absolute -top-2 left-4 px-2 py-0.5 text-xs font-medium bg-primary text-primary-foreground rounded-full">
+                    Current
+                  </span>
+                )}
+                <p className="text-xs text-primary font-medium mb-1">{phase.phase}</p>
+                {phase.period && <p className="text-xs text-muted-foreground mb-2">{phase.period}</p>}
+                <h4 className="font-semibold text-foreground mb-3">{phase.title}</h4>
+                <ul className="space-y-2">
+                  {phase.items.map((item, i) => (
+                    <li key={i} className="text-xs text-muted-foreground flex items-start gap-2">
+                      <span className="w-1 h-1 rounded-full bg-primary mt-1.5 shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       </div>

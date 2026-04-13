@@ -11,19 +11,19 @@ export function Vision() {
           <p className="text-sm font-medium text-primary uppercase tracking-wider mb-6">Our Vision</p>
           
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
-            Schools Are the First Place Where Athletic Potential Appears
+            To Become the Default Infrastructure Layer for School Sports Globally
           </h2>
           
           <p className="mt-8 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Peak Athlete connects schools, data analytics, and the sports ecosystem to help every student discover their athletic potential. We&apos;re building the initial &apos;Talent Watch&apos; zones across India.
+            India&apos;s largest untapped dataset is student physical data. We are building the rails to unlock it. From regional MVP to national infrastructure.
           </p>
 
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { value: 'Goa', label: 'Launch State' },
-              { value: '28', label: 'States Target' },
-              { value: '1M+', label: 'Athletes Goal' },
+              { value: '1.5M', label: 'Schools in India' },
+              { value: '250M+', label: 'School-Going Children' },
               { value: 'Rs 10', label: 'Per Student/Month' },
+              { value: '2027', label: 'National Expansion' },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="text-2xl md:text-3xl font-bold text-primary">{stat.value}</div>

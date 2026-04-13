@@ -13,30 +13,30 @@ export function CTA() {
 
           <div className="relative max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-balance">
-              Join the future of sports
+              Partner With Us to Build the Connected Future of Indian Sports
             </h2>
             <p className="mt-6 text-lg text-background/70 max-w-xl mx-auto text-pretty">
-              Be part of the revolution that&apos;s transforming how India discovers and develops athletic talent.
+              Join 4 pilot schools and 1,000+ students in Goa. Be part of the infrastructure layer for school sports nationally.
             </p>
 
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="mailto:hello@athlosys.com"
+                href="mailto:durgesh@athlosys.com"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-medium rounded-xl bg-primary text-primary-foreground hover:bg-primary/90 transition-colors w-full sm:w-auto"
               >
                 Book a Demo
                 <ArrowRight className="w-4 h-4" />
               </a>
               <a
-                href="mailto:hello@athlosys.com"
+                href="tel:+919142783928"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-medium rounded-xl border border-background/20 text-background hover:bg-background/10 transition-colors w-full sm:w-auto"
               >
-                Contact Sales
+                Call +91-9142783928
               </a>
             </div>
 
             <p className="mt-8 text-sm text-background/50">
-              No credit card required. Get started in minutes.
+              School subscription starts at Rs 10/student/month. Partner with us to build the connected future of Indian sports.
             </p>
           </div>
         </div>
