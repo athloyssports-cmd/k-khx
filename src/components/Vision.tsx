@@ -18,12 +18,10 @@ export function Vision() {
             India&apos;s largest untapped dataset is student physical data. We are building the rails to unlock it. From regional MVP to national infrastructure.
           </p>
 
-          <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="mt-12 grid grid-cols-2 gap-8">
             {[
               { value: '1.5M', label: 'Schools in India' },
               { value: '250M+', label: 'School-Going Children' },
-              { value: 'Rs 10', label: 'Per Student/Month' },
-              { value: '2027', label: 'National Expansion' },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="text-2xl md:text-3xl font-bold text-primary">{stat.value}</div>

@@ -52,9 +52,9 @@ export function Hero() {
           {/* Stats */}
           <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
             {[
-              { value: '1,000+', label: 'Students Monitored' },
-              { value: '4', label: 'Pilot Schools' },
-              { value: '12+', label: 'Assessment Metrics' },
+              { value: '5,000+', label: 'Students Monitored' },
+              { value: '12', label: 'Pilot Schools' },
+              { value: '15+', label: 'Assessment Metrics' },
               { value: 'Goa', label: 'Launch State' },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
@@ -62,6 +62,14 @@ export function Hero() {
                 <div className="mt-1 text-sm text-muted-foreground">{stat.label}</div>
               </div>
             ))}
+          </div>
+
+          {/* Coming Soon */}
+          <div className="mt-8 flex items-center justify-center gap-2 text-sm text-muted-foreground">
+            <span>Coming soon in</span>
+            <span className="px-2 py-1 rounded bg-primary/10 text-primary font-medium">Gujarat</span>
+            <span>&</span>
+            <span className="px-2 py-1 rounded bg-primary/10 text-primary font-medium">Odisha</span>
           </div>
         </div>
       </div>

@@ -11,31 +11,11 @@ export function Testimonial() {
           </h2>
         </div>
 
-        {/* Stats */}
-        <div className="grid md:grid-cols-4 gap-6 mb-16">
-          <div className="text-center p-6 rounded-2xl bg-background border border-border">
-            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">1,000+</div>
-            <p className="text-muted-foreground text-sm">Students Monitored</p>
-          </div>
-          <div className="text-center p-6 rounded-2xl bg-background border border-border">
-            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">4</div>
-            <p className="text-muted-foreground text-sm">Active Pilot Schools</p>
-          </div>
-          <div className="text-center p-6 rounded-2xl bg-background border border-border">
-            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">2</div>
-            <p className="text-muted-foreground text-sm">Govt Bodies in Discussion</p>
-          </div>
-          <div className="text-center p-6 rounded-2xl bg-background border border-border">
-            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">100</div>
-            <p className="text-muted-foreground text-sm">Schools Target (July 2026)</p>
-          </div>
-        </div>
-
         {/* Pilot Schools */}
         <div className="mb-12">
-          <p className="text-center text-sm font-medium text-muted-foreground mb-6">Active Pilot Deployments in Goa</p>
-          <div className="flex flex-wrap items-center justify-center gap-4">
-            {['Goa Velha', 'Fr Agnel St Lawrence', 'Fr Agnel Central', 'St Andrews'].map((school) => (
+          <p className="text-center text-sm font-medium text-muted-foreground mb-6">Active Pilot Schools in Goa</p>
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            {['Goa Velha', 'Fr Agnel St Lawrence', 'Fr Agnel Central', 'St Andrews', 'Don Bosco Panjim', 'Loyola High School', 'St Xavier\'s Mapusa', 'Holy Cross Candolim'].map((school) => (
               <span
                 key={school}
                 className="px-4 py-2 text-sm font-medium rounded-full bg-primary/10 text-primary border border-primary/20"
@@ -43,6 +23,9 @@ export function Testimonial() {
                 {school}
               </span>
             ))}
+            <span className="px-4 py-2 text-sm font-medium rounded-full bg-muted text-muted-foreground">
+              + 4 more
+            </span>
           </div>
         </div>
 
@@ -67,19 +50,16 @@ export function Testimonial() {
           </div>
         </div>
 
-        {/* Govt Bodies */}
-        <div className="mt-12">
-          <p className="text-center text-sm font-medium text-muted-foreground mb-6">In Active Discussions With</p>
-          <div className="flex flex-wrap items-center justify-center gap-4">
-            {['Sports Authority of Goa', 'Department of Education (DOE)', 'NEP 2020 Aligned', 'National Sports Policy'].map((badge) => (
-              <span
-                key={badge}
-                className="px-4 py-2 text-sm font-medium rounded-full bg-muted text-muted-foreground"
-              >
-                {badge}
-              </span>
-            ))}
-          </div>
+        {/* Policy Alignment */}
+        <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
+          {['NEP 2020 Aligned', 'National Sports Policy', 'FIT India Movement'].map((badge) => (
+            <span
+              key={badge}
+              className="px-4 py-2 text-sm font-medium rounded-full bg-muted text-muted-foreground"
+            >
+              {badge}
+            </span>
+          ))}
         </div>
       </div>
     </section>
